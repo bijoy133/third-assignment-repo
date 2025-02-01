@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en  data-theme='light' ">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,17 @@
 .color-secondary{
   background-color:#FFDC26 ;
 }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+  border-right: 3px solid black;
+}
 </style>
 
 </head>
@@ -72,7 +82,7 @@
   <div class=" w-5/6 mx-auto p-5">
    
     <div class="space-y-4 relative">
-      <h1 class="text-2xl lg:text-4xl font-bold">Pamper Your Pet, <br>Because They Deserve <br>the Bes</h1>
+      <h1 class="text-2xl lg:text-4xl font-bold animate-typing ">Pamper Your Pet, <br>Because They Deserve <br>the Bes</h1>
       <p class="text-sm text-[#111111] " >Discover a world of treats, toys, and essentials handpicked <br>for your furry friends. Shop now and make tails wag with joy!</p>
       <button class="btn  bg-[#FFDC26] font-bold border-none">Find a pet</button>
       
@@ -428,6 +438,20 @@
      
         </div>
       </div>
+     </section>
+     <!-- add section -->
+
+     <section class="w-5/6 mx-auto mt-16 ">
+      <div class="lg:flex justify-between items-center bg-[#FFF9F4] rounded-xl text-[#111111] p-6">
+        <div class="p-5 space-y-6">
+          <h1 class="text-2xl font-bold">Cute pet</h1>
+          <p class="text-sm">When living with a dog, you encounter many experiences as you learn to live with it. <br>At some point, you need the right words to describe your furry friend to your friends <br>and family while conversing and bragging.</p>
+          <button class="btn px-10 bg-[#FFDC26] font-bold border-none">Get</button>
+        </div>
+        <img src="c1-assets/cute-pet-mid.png" alt="">
+        
+      </div>
+
      </section>
      
    </main>
